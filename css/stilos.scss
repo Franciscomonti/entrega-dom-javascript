@@ -1,0 +1,119 @@
+$color1 : #264653;
+$color2 : #2a9d8f;
+$color3 : #e9c46a;
+$color4 : #f4a261;
+$color5 : #e76f51;
+
+
+
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+
+
+    .header {
+        background-color: $color1;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 0px 15px;
+
+
+        .header-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+            }
+
+            p {
+                font-size: 30px;
+                color: $color3;
+                text-align: center;
+            }
+        }
+
+        .header-buscador {
+
+            input {
+                width: 400px;
+            }
+        }
+
+        p {
+            color: $color3;
+
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .usuario-nombre {
+                text-align: justify;
+            }
+
+            .header-carrito {
+                margin-left: 10px;
+
+                img {
+                    width: 50px;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+
+    .principal {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        height: auto;
+
+        .box-cards {
+
+            margin-top: 100px;
+            box-shadow: #264653 2px 2px 15px;
+            width: 100%;
+            height: auto;
+
+            .cards {
+                width: 100%;
+                height: 250px;
+                display: flex;
+                padding: 50px;
+                border-bottom: #26465346 1px solid;
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    object-fit: contain;
+                    width: 200px;
+                    height: 190px;
+                    margin-right: 20px;
+                }
+
+
+                .cards-descript {
+                    h5 {
+                        color: $color2;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}
