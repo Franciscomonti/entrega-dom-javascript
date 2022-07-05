@@ -26,7 +26,7 @@ const listaProductos = [{
 ]
 
 class Constprod {
-    constructor(nombre, descripcion, precio, imagen){
+    constructor(nombre, descripcion, precio, imagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -34,13 +34,13 @@ class Constprod {
     }
 }
 
-function mostrarNombre(){
+function mostrarNombre() {
     let nombreUsuario = prompt("Ingrese su nombre")
     let mostrarNombreUsuario = document.querySelector("#nombre-usuario span")
     mostrarNombreUsuario.innerHTML = nombreUsuario
 }
 
-function agregarProductos(){
+function agregarProductos() {
     let numerosProductos = parseInt(prompt("Cantidad de productos a agregar:"))
     for (let index = 0; index < numerosProductos; index++) {
         let nombre = prompt("Nombre de producto:")
@@ -69,7 +69,7 @@ function crearCards() {
                 <h2>${producto.nombre}</h2>
                 <h6>${producto.descripcion}</h6>
                 <h5>$${producto.precio}</h5>
-                <a href=""./">Comprar ahora</a>
+                <a href="">Comprar ahora</a>
             </div>`;
         contenedorCards.append(card);
     }
